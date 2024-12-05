@@ -1,0 +1,130 @@
+#homepage {
+  background-color: beige;
+}
+
+#aboutpage {
+  background-color: lightcyan;
+}
+
+#portfoliopage {
+  background-color: honeydew;
+}
+
+#contactpage {
+  background-color: linen;
+}
+
+body {
+  min-height: max-content;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aquamarine;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+#logo {
+  display: flex;
+}
+
+#navigation {
+  display: flex;
+  color: blue;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  margin-left: 500px;
+  margin-top: 25px;
+  background-color: aquamarine;
+}
+
+a {
+  margin-left: 20px;
+}
+
+a:hover {
+  background-color: blanchedalmond;
+  box-shadow: gold 1px 1px;
+}
+
+main {
+  min-height: max-content;
+}
+
+h2 {
+  text-align: center; 
+  color: blue; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#profile {
+  display: inline-block; 
+  margin-left: 100px; 
+  margin-right: 0px;
+}
+
+p {
+  text-align: justify; 
+  color: darkblue; 
+  margin-left: 0px;
+  display: inline-block; 
+  font-size: 60;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#login {
+  margin-left: 100px;
+}
+
+#signup {
+  margin-left: 100px;
+}
+
+h3 {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header > div {
+  background-color: aquamarine;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  margin-top: 5em;
+  margin-bottom: 20em;
+}
