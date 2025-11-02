@@ -2,83 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMON | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body id="contactpage">
-  <br>
-  <header>
-    <div id="logo">
-      <img src="./photos/Sunset logo.JPG" alt="Sunset Photo" width="100px" height="100px" />
-      <h1>MMON</h1>
-    </div>
 
-    <div>
+  <header>
+    <div class="header-container">
+      <div id="logo">
+        <img src="./photos/Sunset logo.JPG" alt="Sunset Logo" />
+        <h1>MMON</h1>
+      </div>
+
       <nav id="navigation">
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
         <a href="./portfolio.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <br>
-    <section id="login">
-      <h3>Log In</h3>
-      <p>If you are a member, please log in.</p>
-      <form name="log In" action="login.php" target="_blank" method="get">
-        <input placeholder=UserName />
-        <input type="password" placeholder="Password" /> 
-        <button>Submit</button>
-      </form>
+    <section class="intro-section">
+      <h2>Get in Touch</h2>
+      <p style="text-align:center; max-width:700px; margin:auto;">
+        Feel free to reach out — whether for collaboration, questions, or just to say hello!
+      </p>
     </section>
 
-    <br>
-    <br>
-    <section id="signup">
-      <h3>Sign Up</h3>
-      <p>If you are not a member, please sign up for more information.</p>
-      <form name="Sign up" action="signUp.php " target="_blank" method="get">
-        <label for="firstName">First Name</label>
-        <input type="text">
-        <label for="lastName">Last Name</label>
-        <input type="text">
-        <label for="email">Email</label>
-        <input type="email">
-        <label for="DOB">Date of Birth</label>
-        <input type="date">
-        <label for="address">Address</label>
-        <input type="text">
-        <label for="city">City</label>
-        <input type="text">
-        <label for="State">State</label>
-        <input type="text">
-        <label for="country">Country</label>
-        <input type="text">
-        <label for="document">Please submit Profile Photo</label>
-        <input type="file">
-        <br>
-        <button>Submit</button>
-      </form>
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-box">
+          <h3>Log In</h3>
+          <p>If you are already a member, please log in below.</p>
+          <form action="login.php" method="get" target="_blank">
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Log In</button>
+          </form>
+        </div>
+
+        <div class="form-box">
+          <h3>Sign Up</h3>
+          <p>New here? Create your account for more information.</p>
+          <form action="signUp.php" method="get" target="_blank">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="date" placeholder="Date of Birth" />
+            <input type="text" placeholder="Address" />
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="Country" />
+            <input type="file" />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
-  <br>
-  <br>
-
   <footer>
-    <h4>
-      <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+    <h4>Follow Me</h4>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
       <a href="https://www.facebook.com/" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    </h4>
+    </div>
   </footer>
-  
 
 </body>
 </html>

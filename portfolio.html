@@ -2,78 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMON | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body id="portfoliopage">
-  <br>
-  <header>
-    <div id="logo">
-      <img src="./photos/Sunset logo.JPG" alt="Sunset Photo" width="100px" height="100px" />
-      <h1>MMON</h1>
-    </div>
 
-    <div>
+  <header>
+    <div class="header-container">
+      <div id="logo">
+        <img src="./photos/Sunset logo.JPG" alt="Sunset Logo" />
+        <h1>MMON</h1>
+      </div>
+
       <nav id="navigation">
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
-        <a href="./portfolio.html">Portfolio</a>
+        <a href="./portfolio.html" class="active">Portfolio</a>
         <a href="./contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section>
+    <section class="intro-section">
       <h2>My Projects</h2>
 
-      <div id="profile">
-        <img src="./photos/Butterfly.JPG" alt="Butterfly Photo" width="150" height="150">
-      </div>
-      <p class="portfolio">
-        Taking photos of beautiful nature.
-        <br> Butterfly with flower.
-        </p>
-      </p>
-    </section>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <img src="./photos/Butterfly.JPG" alt="Butterfly Photo" />
+          <p>Capturing the gentle beauty of butterflies and flowers in nature.</p>
+        </div>
 
-    <section>
-      <div id="profile">
-        <img src="./photos/NY.JPG" alt="NY Photo" width="150" height="150">
-      </div>
-      <p class="portfolio">
-        Visit the tallest building of the city
-        <br> Beautiful photo of NY city from the Top of the Rock. 
-        </p>
-      </p>
-    </section>
+        <div class="portfolio-card">
+          <img src="./photos/NY.JPG" alt="NY City Photo" />
+          <p>The skyline of New York — a symbol of ambition and creativity.</p>
+        </div>
 
-    <section>
-      <div id="profile">
-        <img src="./photos/Christmas.JPG" alt="Christmas Photo" width="150" height="150">
+        <div class="portfolio-card">
+          <img src="./photos/Christmas.JPG" alt="Christmas Photo" />
+          <p>The magical holiday season at Rockefeller Center — pure joy!</p>
+        </div>
       </div>
-      <p class="portfolio">
-        Enjoy Holiday Season
-        <br> Beautiful Christmas tree at Rockefeller center. 
-        </p>
-      </p>
     </section>
   </main>
 
-  <br>
-  <br>
-
   <footer>
-    <h4>
-      <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+    <h4>Follow Me</h4>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
       <a href="https://www.facebook.com/" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-    </h4>
+    </div>
   </footer>
-  
 
 </body>
 </html>
